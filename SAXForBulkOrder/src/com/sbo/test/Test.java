@@ -25,7 +25,7 @@ public class Test {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		File file = new File("F:\\Java\\Study\\Webservices\\SAXForBulkOrder\\Resources\\po.xml");
+		File file = new File("C:\\Users\\abhi\\git\\SAXBulkOrder\\SAXForBulkOrder\\Resources\\po.xml");
 		try {
 			parser.parse(file, handler);
 		} catch (SAXException e) {
