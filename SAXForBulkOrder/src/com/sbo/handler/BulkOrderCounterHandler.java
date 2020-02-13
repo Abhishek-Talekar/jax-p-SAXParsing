@@ -25,8 +25,12 @@ public class BulkOrderCounterHandler extends DefaultHandler {
 
 	@Override
 	public void characters(char[] ch, int start, int length) throws SAXException {
-		String qData = new String(ch);
+		String qData = new String(ch, start, length);
 		System.out.println(qData);
+		if (elementName != null && elementName.length() > 0) {
+			System.out.println(elementName);
+		}
+
 	}
 
 }
