@@ -28,9 +28,10 @@ public class BulkOrderCounterHandler extends DefaultHandler {
 		String qData = new String(ch, start, length);
 		System.out.println(qData);
 		if (elementName != null && elementName.length() > 0) {
-			System.out.println(elementName);
+			qty += Integer.parseInt(qData);
+			
 		}
-
+		elementName = null;
 	}
 
 }
