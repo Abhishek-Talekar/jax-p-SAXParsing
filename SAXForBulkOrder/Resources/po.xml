@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <purchase-order>
 	<products>
-		<product>
+			<product>
 			<product-code>2ety</product-code>
 			<quantity>234</quantity>
 		</product>

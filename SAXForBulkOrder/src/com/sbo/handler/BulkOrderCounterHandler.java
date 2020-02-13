@@ -19,7 +19,6 @@ public class BulkOrderCounterHandler extends DefaultHandler {
 	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
 		if (qName.equals("quantity")) {
 			this.elementName = qName;
-			System.out.println(elementName);
 		}
 	}
 
@@ -28,7 +27,18 @@ public class BulkOrderCounterHandler extends DefaultHandler {
 		String qData = new String(ch, start, length);
 		System.out.println(qData);
 		if (elementName != null && elementName.length() > 0) {
-			qty += Integer.parseInt(qData);
+			
+			if(elementName.equals("quantity"))
+			{
+				qty = Integer.parseInt(qData);	
+				if(qty>=30) {
+				System.out.println("Total Quantity:"+qty+" This is Bulk Order.");
+				}
+				else {
+					System.out.println("Not a bulk order as Quantity is:" +qty);
+				}
+			}
+		
 			
 		}
 		elementName = null;
