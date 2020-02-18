@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<purchase-order>
-	<products>
-			<product>
-			<product-code>2ety</product-code>
-			<quantity>234</quantity>
-		</product>
-		<product>
-			<product-code>qw123</product-code>
-			<quantity>34</quantity>
-		</product>
-		<product>
-			<product-code>mlop0</product-code>
-			<quantity>21</quantity>
-		</product>
-	</products>
-	<shipping-address>
-		<address-line1>Pawan nagar</address-line1>
-		<address-line2>Cidco</address-line2>
-		<state>MH</state>
+<products>
+	<product>
+		<product-code>123er</product-code>
+		<product-quantity>23</product-quantity>
+	</product>
+	<product>
+		<product-code>rt567</product-code>
+		<product-quantity>39</product-quantity>
+	</product>
+	<shipping-address address-type="permenant">
+		<address-line1>High Court</address-line1>
+		<address-line2>Next lane</address-line2>
 		<city>Nasik</city>
+		<state>Maharashtra</state>
 		<zip>422009</zip>
 	</shipping-address>
-</purchase-order>
+</products>
